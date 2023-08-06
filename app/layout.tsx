@@ -6,19 +6,19 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "yshv.com",
+    template: "%s | yshv.com",
   },
-  description: "Software engineer at upstash.com and founder of planetfall.io",
+  // description: "Software engineer at upstash.com and founder of planetfall.io",
   openGraph: {
-    title: "chronark.com",
+    title: "yshv.com",
     description:
       "Software engineer at upstash.com and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+    url: "https://yshv.com",
+    siteName: "yshv-2022.com",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://yshv.com/og.png",
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "yshvchaudhary",
     card: "summary_large_image",
   },
   icons: {
