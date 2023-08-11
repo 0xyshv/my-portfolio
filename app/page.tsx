@@ -5,6 +5,10 @@ import Particles from "./components/particles";
 const navigation = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/yashasvi-chaudhary-3ab716287/",
+  },
 ];
 
 export default function Home() {
