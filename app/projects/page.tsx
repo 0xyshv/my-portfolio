@@ -3,23 +3,25 @@ import React from "react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
-import { Redis } from "@upstash/redis";
-import { Eye } from "lucide-react";
 import { allProjects } from "@/constants/projects";
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
   const views: Record<string, number> = {};
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  const featured = allProjects.find((project) => project.slug === "01")!;
+  const top2 = allProjects.find((project) => project.slug === "02")!;
+  const top3 = allProjects.find((project) => project.slug === "03")!;
+  const top4 = allProjects.find((project) => project.slug === "04")!;
+  const top5 = allProjects.find((project) => project.slug === "05")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
       (project) =>
         project.slug !== featured.slug &&
         project.slug !== top2.slug &&
-        project.slug !== top3.slug
+        project.slug !== top3.slug &&
+        project.slug !== top4.slug &&
+        project.slug !== top5.slug
     )
     .sort(
       (a, b) =>
