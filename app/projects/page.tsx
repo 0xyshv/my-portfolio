@@ -8,26 +8,26 @@ import { allProjects } from "@/constants/projects";
 export const revalidate = 60;
 export default async function ProjectsPage() {
   const views: Record<string, number> = {};
-  const featured = allProjects.find((project) => project.slug === "01")!;
+  const top1 = allProjects.find((project) => project.slug === "01");
   const top2 = allProjects.find((project) => project.slug === "02")!;
   const top3 = allProjects.find((project) => project.slug === "03")!;
   const top4 = allProjects.find((project) => project.slug === "04")!;
   const top5 = allProjects.find((project) => project.slug === "05")!;
-  const sorted = allProjects
-    .filter((p) => p.published)
-    .filter(
-      (project) =>
-        project.slug !== featured.slug &&
-        project.slug !== top2.slug &&
-        project.slug !== top3.slug &&
-        project.slug !== top4.slug &&
-        project.slug !== top5.slug
-    )
-    .sort(
-      (a, b) =>
-        new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
-    );
+  // const sorted = allProjects
+  //   .filter((p) => p.published)
+  //   .filter(
+  //     (project) =>
+  //       project.slug !== featured.slug &&
+  //       project.slug !== top2.slug &&
+  //       project.slug !== top3.slug &&
+  //       project.slug !== top4.slug &&
+  //       project.slug !== top5.slug
+  //   )
+  //   .sort(
+  //     (a, b) =>
+  //       new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
+  //       new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
+  //   );
 
   return (
     <div className="relative pb-16">
@@ -43,8 +43,9 @@ export default async function ProjectsPage() {
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
-        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
-          <Card>
+        {/* <div className=" gap-8 mx-auto  "> */}
+        {/* Featured Project (large div) 1 */}
+        {/* <Card>
             <Link href={`/projects/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
@@ -59,12 +60,12 @@ export default async function ProjectsPage() {
                       <span>SOON</span>
                     )}
                   </div>
-                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
+                  <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(
                       views[featured.slug] ?? 0
                     )}
-                  </span> */}
+                  </span>
                 </div>
 
                 <h2
@@ -83,16 +84,17 @@ export default async function ProjectsPage() {
                 </div>
               </article>
             </Link>
-          </Card>
+          </Card> */}
+        {/* Featured Project (large div) 1 */}
 
-          <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            {[top2, top3].map((project) => (
-              <Card key={project.slug}>
-                <Article project={project} views={views[project.slug] ?? 0} />
-              </Card>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+          {[top1, top2, top3, top4, top5].map((project) => (
+            <Card key={project.slug}>
+              <Article project={project} views={views[project.slug] ?? 0} />
+            </Card>
+          ))}
         </div>
+        {/* </div> */}
         <div className="hidden w-full h-px md:block bg-zinc-800" />
 
         {/* <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
