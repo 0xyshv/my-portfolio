@@ -9,7 +9,8 @@ export const metadata: Metadata = {
     default: "Yashasvi Chaudhary",
     template: "%s | Home",
   },
-  // description: "Software engineer at upstash.com and founder of planetfall.io",
+  description:
+    "Meta certified Frontend Developer | Typescript, NextJS, Tailwind CSS and UI/UX",
   openGraph: {
     title: "Yashasvi Chaudhary",
     description: "Meta certified Front-end Developer",
