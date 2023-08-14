@@ -9,25 +9,26 @@ const socials = [
     icon: <Twitter size={20} />,
     href: "https://twitter.com/0xyshv",
     label: "Twitter",
-    handle: "@0xyshv_",
+    handle: "@0xyshv",
+  },
+
+  {
+    icon: <Github size={20} />,
+    href: "https://github.com/yshv-2022",
+    label: "Github",
+    handle: "0xyshv",
+  },
+  {
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/yashasvi-chaudhary-3ab716287/",
+    label: "LinkedIn",
+    handle: "Yashasvi Chaudhary",
   },
   {
     icon: <Mail size={20} />,
     href: "mailto:writetoyashasvichaudhary@gmail.com",
     label: "Email",
     handle: "writetoyashasvichaudhary@gmail.com",
-  },
-  {
-    icon: <Github size={20} />,
-    href: "https://github.com/yshv-2022",
-    label: "Github",
-    handle: "yshv-2022",
-  },
-  {
-    icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/in/yashasvi-chaudhary-3ab716287/",
-    label: "Github",
-    handle: "YashasviChaudhary",
   },
 ];
 
@@ -36,9 +37,9 @@ export default function Example() {
     <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-        <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+        <div className="grid w-full grid-cols-1 gap-8 m-auto mt-32 md:mt-32 lg:mt-32 sm:mt-28 sm:grid-cols-3 lg:gap-16">
           {socials.map((s) => (
-            <Card>
+            <Card isEmail={s.label == "Email" ? true : false}>
               <Link
                 href={s.href}
                 target="_blank"
@@ -52,7 +53,7 @@ export default function Example() {
                   {s.icon}
                 </span>{" "}
                 <div className="z-10 flex flex-col items-center">
-                  <span className="text-xl font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
+                  <span className="text-xl text-center font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
                     {s.handle}
                   </span>
                   <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
