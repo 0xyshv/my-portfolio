@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",

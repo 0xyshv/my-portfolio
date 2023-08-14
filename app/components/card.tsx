@@ -17,6 +17,7 @@ export const Card: React.FC<any> = ({ children, isEmail }: any) => {
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
   }
+
   let maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
   let style = { maskImage, WebkitMaskImage: maskImage };
 
@@ -25,7 +26,7 @@ export const Card: React.FC<any> = ({ children, isEmail }: any) => {
       onMouseMove={onMouseMove}
       className={
         isEmail
-          ? "col-span-3 overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 "
+          ? "sm:col-span-3 overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 "
           : "overflow-hidden relative duration-700 border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/50 border-zinc-600 "
       }
     >
