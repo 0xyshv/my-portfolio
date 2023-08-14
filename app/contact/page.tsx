@@ -14,7 +14,7 @@ const socials = [
 
   {
     icon: <Github size={20} />,
-    href: "https://github.com/yshv-2022",
+    href: "https://github.com/0xyshv",
     label: "Github",
     handle: "0xyshv",
   },
@@ -32,7 +32,7 @@ const socials = [
   },
 ];
 
-export default function Example() {
+export default function Contact() {
   return (
     <div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
