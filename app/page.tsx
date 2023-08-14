@@ -41,6 +41,9 @@ export default function Home() {
           <br />
           Building DApps in Web3 and DeFi space using NextJS, Typescript,
           Tailwind CSS and Wagmi
+          <br />
+          Currently learning prompt engineering and LLMs and playing with
+          ChatGPT APIs.
         </h2>
         <br />
         <a
