@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Yashasvi Chaudhary",
     description: "Meta certified Front-end Developer",
-    url: "0xyshv.vercel.app",
+    url: "https://0xyshv.vercel.app/",
     siteName: "0xyshv",
     images: [
       {
