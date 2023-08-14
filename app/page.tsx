@@ -39,11 +39,16 @@ export default function Home() {
           Hi 👋, My name is Yashasvi chaudhary, I'm a meta certified front-end
           developer.
           <br />
-          Building DApps in Web3 and DeFi space using NextJS, Typescript,
-          Tailwind CSS and Wagmi
+          Building DApps in{" "}
+          <span className="text-white">
+            {" "}
+            Web3 and DeFi space using NextJS, Typescript, Tailwind CSS and Wagmi
+          </span>
           <br />
-          Currently learning prompt engineering and LLMs and playing with
-          ChatGPT APIs.
+          Currently{" "}
+          <span className="text-white">
+            learning prompt engineering, LLMs and playing with ChatGPT APIs.
+          </span>
         </h2>
         <br />
         <a
