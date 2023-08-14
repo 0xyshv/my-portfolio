@@ -6,18 +6,18 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "0xyshv.com",
-    template: "%s | oxyshv.com",
+    default: "Yashasvi Chaudhary",
+    template: "%s | Home",
   },
   // description: "Software engineer at upstash.com and founder of planetfall.io",
   openGraph: {
-    title: "0xyshv.com",
+    title: "Yashasvi Chaudhary",
     description: "Meta certified Front-end Developer",
-    url: "0xyshv",
-    siteName: "0xyshv.vercel.app",
+    url: "0xyshv.vercel.app",
+    siteName: "0xyshv",
     images: [
       {
-        url: "https://0xyshv.vercel.app/",
+        url: "https://avatars.githubusercontent.com/u/98604628?v=4",
         width: 1920,
         height: 1080,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "0xyshv",
+    title: "Yashasvi Chaudhary",
     card: "summary_large_image",
   },
   icons: {
