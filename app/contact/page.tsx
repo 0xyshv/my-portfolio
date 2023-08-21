@@ -20,15 +20,15 @@ const socials = [
   },
   {
     icon: <Linkedin size={20} />,
-    href: "https://www.linkedin.com/in/yashasvi-chaudhary-3ab716287/",
+    href: "https://www.linkedin.com/in/0xyshv/",
     label: "LinkedIn",
     handle: "Yashasvi Chaudhary",
   },
   {
     icon: <Mail size={20} />,
-    href: "mailto:writetoyashasvichaudhary@gmail.com",
+    href: "mailto:writetoyshv@gmail.com",
     label: "Email",
-    handle: "writetoyashasvichaudhary@gmail.com",
+    handle: "writetoyshv@gmail.com",
   },
 ];
 
