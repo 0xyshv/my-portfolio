@@ -4,9 +4,9 @@ export const allProjects: any[] = [
     _raw: {},
     type: "Project",
     published: false,
-    title: "Next JS Tailwind Template",
+    title: "Buisness Consulting Hub",
     description:
-      "The Next.js App with Tailwind CSS Integration is a dynamic and responsive web application that leverages the capabilities of Next.js for seamless page routing and Tailwind CSS for rapid and consistent UI development. This project focuses on creating a smooth user experience, efficient development workflows, and a visually appealing design.",
+      "The Buisness Consulting Hub frontend with Tailwind CSS Integration is a dynamic and responsive web application that leverages the capabilities of Next.js for seamless page routing and Tailwind CSS for rapid and consistent UI development. This project focuses on creating a smooth user experience, efficient development workflows, and a visually appealing design.",
     date: "2023-05-15T00:00:00.000Z",
     url: "https://nextjs-tailwind-ui-4.vercel.app/",
     repository: "0xyshv/nextjs-tailwind-ui-4.git",
