@@ -44,6 +44,21 @@ export const allProjects: any[] = [
     path: "string",
     slug: "03",
   },
+  {
+    _id: "string",
+    _raw: {},
+    type: "Project",
+    published: false,
+    title: "Alpha Marketplace Front-end",
+    description:
+      "Alpha Marketplace is an innovative platform developed by AlphaDevs during the OpenAI Hackathon. Leveraging Arweave Blockchain and AI classifiers, it allows users to tag, upload, and license images. With React.js frontend and an Express backend, it seamlessly connects wallets and facilitates easy asset queries, ensuring creator recognition and monetization.",
+    date: "2023-09-14T00:00:00.000Z",
+    url: "https://nrqve4t77nxkgbt5j7gchxx3qbbf3pso5x37vozdl3byxjb2qwfq.arweave.net/bGFScn_7bqMGfU_MI977gEJdvk7t9_q7I17Di6Q6hYs/",
+    repository: "0xyshv/image-marketplace.git",
+    body: { code: "" },
+    path: "string",
+    slug: "04",
+  },
   // {
   //   _id: "string",
   //   _raw: {},
