@@ -12,7 +12,7 @@ export const allProjects: any[] = [
     repository: "0xyshv/nextjs-tailwind-ui-4.git",
     body: { code: "" },
     path: "string",
-    slug: "01",
+    slug: "04",
   },
   {
     _id: "string",
@@ -57,7 +57,7 @@ export const allProjects: any[] = [
     repository: "0xyshv/image-marketplace.git",
     body: { code: "" },
     path: "string",
-    slug: "04",
+    slug: "01",
   },
   // {
   //   _id: "string",
