@@ -15,6 +15,7 @@ export default async function ProjectsPage() {
   const top5 = allProjects.find((project) => project.slug === "05")!;
   const top6 = allProjects.find((project) => project.slug === "06")!;
   const top7 = allProjects.find((project) => project.slug === "07")!;
+  const top8 = allProjects.find((project) => project.slug === "08")!;
   // const sorted = allProjects
   //   .filter((p) => p.published)
   //   .filter(

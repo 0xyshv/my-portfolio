@@ -27,7 +27,7 @@ export const allProjects: any[] = [
     repository: "0xyshv/drum-kit",
     body: { code: "" },
     path: "string",
-    slug: "05",
+    slug: "08",
   },
   {
     _id: "string",
@@ -104,5 +104,20 @@ export const allProjects: any[] = [
     body: { code: "" },
     path: "string",
     slug: "04",
+  },
+  {
+    _id: "string",
+    _raw: {},
+    type: "Project",
+    published: false,
+    title: "P4W3-sbtify-contracts",
+    description:
+      "An app that condenses Jira issue descriptions and auto-generates PR summaries for streamlined project management.A trained model (llama-2-7b-chat) is used to summarize text in Jira Software issues. This Jira app intelligently summarizes text within Jira issues, providing clear overviews of complex and lengthy technical descriptions. The app uses Jira APIs, forge cli and forge api libraries to achieve this.",
+    date: "2023-10-15T00:00:00.000Z",
+    url: "",
+    repository: "https://github.com/0xAlphaDevs/P4W3-sbtify-contracts",
+    body: { code: "" },
+    path: "string",
+    slug: "05",
   },
 ];
