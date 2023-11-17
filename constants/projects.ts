@@ -49,9 +49,9 @@ export const allProjects: any[] = [
     _raw: {},
     type: "Project",
     published: false,
-    title: "Alpha Marketplace Front-end",
+    title: "Alpha Marketplace",
     description:
-      "Alpha Marketplace is an innovative platform developed by AlphaDevs during the OpenAI Hackathon. Leveraging Arweave Blockchain and AI classifiers, it allows users to tag, upload, and license images. With React.js frontend and an Express backend, it seamlessly connects wallets and facilitates easy asset queries, ensuring creator recognition and monetization.",
+      "Won in the Arweave hackathon.Alpha Marketplace is an innovative platform developed by AlphaDevs during the OpenAI Hackathon. Leveraging Arweave Blockchain and AI classifiers, it allows users to tag, upload, and license images. With React.js frontend and an Express backend, it seamlessly connects wallets and facilitates easy asset queries, ensuring creator recognition and monetization.",
     date: "2023-09-15T00:00:00.000Z",
     url: "https://nrqve4t77nxkgbt5j7gchxx3qbbf3pso5x37vozdl3byxjb2qwfq.arweave.net/bGFScn_7bqMGfU_MI977gEJdvk7t9_q7I17Di6Q6hYs/",
     repository: "0xyshv/image-marketplace.git",
@@ -66,7 +66,7 @@ export const allProjects: any[] = [
     published: false,
     title: "AI NFTs",
     description:
-      "AI NFTs is platform that allows artists and AI algorithms to collaborate in the creation of unique NFT artworks. You can create art from text and scribbles, enter prompt and click on Generate Art. Add NFT details such as name, description and click on Mint NFT. This uploads the image to Arweave and creates an NFT using Mintbase SDK.",
+      "Won under the Mintbase SDK category in the Encode X Near Horizon powered NEARDevHub. AI NFTs is platform that allows artists and AI algorithms to collaborate in the creation of unique NFT artworks. You can create art from text and scribbles, enter prompt and click on Generate Art. Add NFT details such as name, description and click on Mint NFT. This uploads the image to Arweave and creates an NFT using Mintbase SDK.",
     date: "2023-10-06T00:00:00.000Z",
     url: "ai-nfts-sooty.vercel.app/",
     repository: "https://github.com/0xAlphaDevs/ai-nfts-mintbase",
