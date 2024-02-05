@@ -2,9 +2,18 @@
 import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/app/components/ui/carousel";
+import { carouselImages } from "@/constants/projects";
 
 type Props = {
   project: {
+    [x: string]: any;
     url?: string;
     title: string;
     description: string;
@@ -43,7 +52,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
   return (
     <header
       ref={ref}
-      className="h-screen relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
+      className="h-screen relative isolate  bg-gradient-to-tl from-black via-zinc-900 to-black pb-4"
     >
       <div
         className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
@@ -100,7 +109,8 @@ export const Header: React.FC<Props> = ({ project, views }) => {
         </div>
       </div>
       {/* align the content in center */}
-      <div className="container mx-auto relative isolate overflow-hidden  py-24 sm:py-32">
+
+      <div className="container mx-auto relative isolate overflow-hidden  pt-24 pb-8 sm:pt-32 sm:pb-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
@@ -109,6 +119,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
             <p className="mt-6 text-lg leading-8 text-zinc-300">
               {project.description}
             </p>
+            {/* add the remaining code here 🟡 */}
           </div>
 
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -119,8 +130,27 @@ export const Header: React.FC<Props> = ({ project, views }) => {
                 </Link>
               ))}
             </div>
+
+            {/* Carousel component */}
           </div>
         </div>
+      </div>
+      <div className="flex justify-center pb-4">
+        <Carousel className="w-[80%] h-[40%]">
+          <CarouselContent>
+            {carouselImages[project.slug]?.map((image, index) => (
+              <CarouselItem key={index}>
+                <img
+                  src={image}
+                  alt={`Carousel Image ${index + 1}`}
+                  className="w-[100%] h-[100%] mt-2 object-cover rounded-lg"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="text-white" />
+          <CarouselNext className="text-white" />
+        </Carousel>
       </div>
     </header>
   );

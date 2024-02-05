@@ -41,7 +41,7 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+            You can view some of my projects below.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -91,7 +91,7 @@ export default async function ProjectsPage() {
         {/* Featured Project (large div) 1 */}
 
         <div className="grid grid-cols-1 lg:grid-cols-1 w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-          {[top1, top2, top4, top6, top7].map((project) => (
+          {[top1, top2, top3, top4, top5, top6].map((project) => (
             <Card key={project.slug}>
               <Article project={project} views={views[project.slug] ?? 0} />
             </Card>
