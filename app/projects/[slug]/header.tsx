@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Github, Twitter } from "lucide-react";
+import { ArrowLeft, ExternalLink, Github, Twitter } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import {
@@ -28,16 +28,18 @@ export const Header: React.FC<Props> = ({ project, views }) => {
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
 
-  const links: { label: string; href: string }[] = [];
+  const links: { key: number; label: JSX.Element; href: string }[] = [];
   if (project.repository) {
     links.push({
-      label: "GitHub",
+      key: 1,
+      label: <Github />, //Insert Githubicon from lucide react instaed of the text in the label
       href: `https://github.com/${project.repository}`,
     });
   }
   if (project.url) {
     links.push({
-      label: "Website",
+      key: 2,
+      label: <ExternalLink />,
       href: project.url,
     });
   }
@@ -109,16 +111,12 @@ export const Header: React.FC<Props> = ({ project, views }) => {
               {project.description}
             </p>
           </div>
-          <ul className="mt-6 text-md text-zinc-300 list-disc ml-0 pl-0">
-            <li> {project.list1}</li>
-            <li> {project.list2}</li>
-          </ul>
 
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
               {links.map((link) => (
-                <Link target="_blank" key={link.label} href={link.href}>
-                  {link.label} <span aria-hidden="true">&rarr;</span>
+                <Link target="_blank" key={link.key} href={link.href}>
+                  {link.label}
                 </Link>
               ))}
             </div>
@@ -127,10 +125,9 @@ export const Header: React.FC<Props> = ({ project, views }) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center py-4">
+      <div className="flex justify-center py-8">
         <Carousel className="w-[80%] h-[40%]">
           <CarouselContent>
-            {/* //if the index is 06 do not display the caraousel -To Do */}
             {carouselImages[project.slug]?.map((image, index) => (
               <CarouselItem key={index}>
                 <img
