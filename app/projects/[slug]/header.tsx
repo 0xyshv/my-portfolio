@@ -17,6 +17,9 @@ import {
 } from "@/app/components/ui/carousel";
 import { carouselImages } from "@/constants/projects";
 
+import { Trophy } from "lucide-react";
+import { Badge } from "@/app/components/ui/badge";
+
 type Props = {
   project: {
     [x: string]: any;
@@ -122,6 +125,12 @@ export const Header: React.FC<Props> = ({ project, views }) => {
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
               {project.title}
             </h1>
+            <a>
+              <Badge className="bg-yellow-200">
+                <Trophy className="pr-2 " />
+                {project.winnerTitle}
+              </Badge>
+            </a>
             <p className="mt-6 text-lg leading-8 text-zinc-300">
               {project.description}
             </p>
