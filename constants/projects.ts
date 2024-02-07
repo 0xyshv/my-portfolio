@@ -12,7 +12,7 @@ export const allProjects: any[] = [
     description:
       "sovID is a EVM based decentralised credential management protocol built using soul bound tokens (SBTs). We have leveraged solidity smart contracts to mint digital identities and credentials as non-transferable NFTs (SBTs).",
     date: "2024-01-31T00:00:00.000Z",
-    url: "sov-id.vercel.app/",
+    url: "https://sov-id.vercel.app/",
     repository: "0xAlphaDevs/SovID",
     body: { code: "" },
     path: "string",
