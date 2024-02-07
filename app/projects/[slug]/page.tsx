@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { Mdx } from "@/app/components/mdx";
 import { Header } from "./header";
 import "./mdx.css";
-// import { ReportView } from "./view";
 import { allProjects } from "@/constants/projects";
 
 export const revalidate = 60;
@@ -34,7 +33,6 @@ export default async function PostPage({ params }: Props) {
   return (
     <div className="bg-zinc-50 min-h-screen">
       <Header project={project} views={views} />
-      {/* <ReportView slug={project.slug} /> */}
     </div>
   );
 }

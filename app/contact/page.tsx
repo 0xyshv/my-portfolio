@@ -6,10 +6,10 @@ import { Card } from "../components/card";
 
 const socials = [
   {
-    icon: <Twitter size={20} />,
-    href: "https://twitter.com/0xyshv",
-    label: "Twitter",
-    handle: "@0xyshv",
+    icon: <Mail size={20} />,
+    href: "mailto:writetoyshv@gmail.com",
+    label: "Email",
+    handle: "writetoyshv@gmail.com",
   },
 
   {
@@ -25,10 +25,10 @@ const socials = [
     handle: "Yashasvi Chaudhary",
   },
   {
-    icon: <Mail size={20} />,
-    href: "mailto:writetoyshv@gmail.com",
-    label: "Email",
-    handle: "writetoyshv@gmail.com",
+    icon: <Twitter size={20} />,
+    href: "https://twitter.com/0xyshv",
+    label: "Twitter",
+    handle: "@0xyshv",
   },
 ];
 
