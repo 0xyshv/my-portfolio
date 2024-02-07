@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Badge } from "../components/ui/badge";
-import { Trophy } from "lucide-react";
+import { Trophy, Star } from "lucide-react";
 
 type Project = {
   slug: string;
@@ -35,10 +35,15 @@ export const Article: React.FC<Props> = ({ project }) => {
           </span>
 
           <span className=" text-xs  flex items-center gap-1">
+            {/* if project title is CredX instead of trophy show star */}
             {project.winner && (
               <div>
                 <Badge className="bg-yellow-200">
-                  <Trophy className="pr-2 " />
+                  {project.title === "CredX" ? (
+                    <Star className="pr-2" />
+                  ) : (
+                    <Trophy className="pr-2" />
+                  )}
                   {project.winnerTitle}
                 </Badge>
               </div>

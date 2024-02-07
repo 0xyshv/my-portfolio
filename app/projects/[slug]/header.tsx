@@ -17,7 +17,7 @@ import {
 } from "@/app/components/ui/carousel";
 import { carouselImages } from "@/constants/projects";
 
-import { Trophy } from "lucide-react";
+import { Trophy, Star } from "lucide-react";
 import { Badge } from "@/app/components/ui/badge";
 
 type Props = {
@@ -26,8 +26,9 @@ type Props = {
     url?: string;
     title: string;
     description: string;
-    list1: string;
-    list2: string;
+    post: string;
+    winner: boolean;
+    winnerTitle: string;
     repository?: string;
   };
 
@@ -122,15 +123,22 @@ export const Header: React.FC<Props> = ({ project, views }) => {
       <div className="container mx-auto relative isolate overflow-hidden pt-24 sm:pt-32 ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
+            <h1 className="text-4xl py-4 font-bold tracking-tight text-white sm:text-6xl font-display">
               {project.title}
             </h1>
-            <a>
-              <Badge className="bg-yellow-200">
-                <Trophy className="pr-2 " />
-                {project.winnerTitle}
-              </Badge>
-            </a>
+
+            {project.winner && (
+              <a target="_blank" href={project.post}>
+                <Badge className="bg-yellow-200">
+                  {project.title === "CredX" ? (
+                    <Star className="pr-2" />
+                  ) : (
+                    "Winner :"
+                  )}{" "}
+                  {project.winnerTitle}
+                </Badge>
+              </a>
+            )}
             <p className="mt-6 text-lg leading-8 text-zinc-300">
               {project.description}
             </p>

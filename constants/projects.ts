@@ -6,6 +6,7 @@ export const allProjects: any[] = [
     published: false,
     winner: false,
     winnerTitle: "",
+    post: "",
     title: "SovID",
     skills: ["EVM", "ERC 721", "Wagmi", "Material Tailwind"],
     description:
@@ -24,6 +25,7 @@ export const allProjects: any[] = [
     published: false,
     winner: true,
     winnerTitle: "LFGHO | ETH Gobal",
+    post: "https://ethglobal.com/showcase/dework-cqc5h",
     title: "DeWork",
     skills: ["DeFi | Stablecoin", "Radix UI", "Next.js 14", "Wagmi"],
     description:
@@ -42,6 +44,7 @@ export const allProjects: any[] = [
     type: "Project",
     winner: true,
     winnerTitle: "Featured",
+    post: "",
     published: false,
     title: "CredX",
     skills: ["DIDs", "DWNs", "VCs", "Recoil", "Next.js "],
@@ -60,6 +63,7 @@ export const allProjects: any[] = [
     type: "Project",
     winner: true,
     winnerTitle: "DIF Hackathon",
+    post: "https://twitter.com/DecentralizedID/status/1753106281538461967",
     published: false,
     title: "HealthX Protocol",
     skills: ["Web5", "Decentalized Identifiers (DIDs)", "DWNs", "Radix UI"],
@@ -79,6 +83,7 @@ export const allProjects: any[] = [
     published: false,
     winner: true,
     winnerTitle: "Encode X Mintbase 2023 Hackathon",
+    post: "https://twitter.com/encodeclub/status/1721543275301970365",
     title: "AI NFTs",
     skills: [
       "Near Blockchain",
@@ -102,6 +107,7 @@ export const allProjects: any[] = [
     published: false,
     winner: true,
     winnerTitle: "The Actual Open AI Hackathon",
+    post: "",
     title: "Alpha Marketplace",
     skills: [
       "Arweave",
