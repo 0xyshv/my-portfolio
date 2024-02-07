@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
+        <ul className="flex items-center justify-center gap-4 font-bold">
           {navigation.map((item) => (
             <Link
               key={item.href}
@@ -51,12 +51,12 @@ export default function Home() {
           </span>
         </h2>
         <br />
-        <a
+        {/* <a
           href="/contact"
           className="px-4 py-2 text-sm font-bold text-white transition duration-500 ease-in-out transform bg-zinc-500 rounded-full hover:bg-zinc-300 hover:text-zinc-500"
         >
-          Hire me
-        </a>
+          Contact
+        </a> */}
       </div>
     </div>
   );

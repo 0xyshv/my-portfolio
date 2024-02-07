@@ -17,6 +17,8 @@ type Props = {
     url?: string;
     title: string;
     description: string;
+    list1: string;
+    list2: string;
     repository?: string;
   };
 
@@ -97,7 +99,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
       </div>
       {/* align the content in center */}
 
-      <div className="container mx-auto relative isolate overflow-hidden  pt-24 pb-8 sm:pt-32 sm:pb-8">
+      <div className="container mx-auto relative isolate overflow-hidden pt-24 sm:pt-32 ">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
@@ -106,11 +108,14 @@ export const Header: React.FC<Props> = ({ project, views }) => {
             <p className="mt-6 text-lg leading-8 text-zinc-300">
               {project.description}
             </p>
-            {/* add the remaining code here 🟡 */}
           </div>
+          <ul className="mt-6 text-md text-zinc-300 list-disc ml-0 pl-0">
+            <li> {project.list1}</li>
+            <li> {project.list2}</li>
+          </ul>
 
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+            <div className="grid grid-cols-1 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
               {links.map((link) => (
                 <Link target="_blank" key={link.label} href={link.href}>
                   {link.label} <span aria-hidden="true">&rarr;</span>
@@ -122,15 +127,16 @@ export const Header: React.FC<Props> = ({ project, views }) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center pb-4">
+      <div className="flex justify-center py-4">
         <Carousel className="w-[80%] h-[40%]">
           <CarouselContent>
+            {/* //if the index is 06 do not display the caraousel -To Do */}
             {carouselImages[project.slug]?.map((image, index) => (
               <CarouselItem key={index}>
                 <img
                   src={image}
                   alt={`Carousel Image ${index + 1}`}
-                  className="w-[100%] h-[100%] mt-2 object-cover rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </CarouselItem>
             ))}
