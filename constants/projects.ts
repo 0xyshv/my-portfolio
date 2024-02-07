@@ -5,6 +5,7 @@ export const allProjects: any[] = [
     type: "Project",
     published: false,
     winner: false,
+    winnerTitle: "",
     title: "SovID",
     skills: ["a", "b", "c", "d"],
     description:
@@ -24,6 +25,7 @@ export const allProjects: any[] = [
     type: "Project",
     published: false,
     winner: true,
+    winnerTitle: "LFGHO | ETH Gobal",
     title: "DeWork",
     skills: ["a", "b", "c", "d"],
     description:
@@ -42,6 +44,7 @@ export const allProjects: any[] = [
     _raw: {},
     type: "Project",
     winner: true,
+    winnerTitle: "DIF Hackathon",
     published: false,
     title: "HealthX Protocol",
     skills: ["a", "b", "c", "d"],
@@ -62,6 +65,7 @@ export const allProjects: any[] = [
     type: "Project",
     published: false,
     winner: true,
+    winnerTitle: "Encode X Mintbase 2023 Hackathon",
     title: "AI NFTs",
     skills: ["a", "b", "c", "d"],
     description:
@@ -82,6 +86,7 @@ export const allProjects: any[] = [
     type: "Project",
     published: false,
     winner: true,
+    winnerTitle: "The Actual Open AI Hackathon",
     title: "Alpha Marketplace",
     skills: ["a", "b", "c", "d"],
     description:

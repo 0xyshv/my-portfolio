@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Badge } from "../components/ui/badge";
+import { Trophy } from "lucide-react";
 
 type Project = {
   slug: string;
@@ -8,6 +9,7 @@ type Project = {
   description: string;
   skills: string[];
   winner: boolean;
+  winnerTitle: string;
 };
 
 type Props = {
@@ -33,7 +35,14 @@ export const Article: React.FC<Props> = ({ project }) => {
           </span>
 
           <span className=" text-xs  flex items-center gap-1">
-            {project.winner && <Badge className="bg-white">Winner</Badge>}
+            {project.winner && (
+              <div>
+                <Badge className="bg-yellow-200">
+                  <Trophy className="pr-2 " />
+                  {project.winnerTitle}
+                </Badge>
+              </div>
+            )}
           </span>
         </div>
         <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
