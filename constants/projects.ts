@@ -31,7 +31,7 @@ export const allProjects: any[] = [
     description:
       "DeWork is a decentralized freelancing platform connecting businesses and professionals leveraging the GHO stable coin for payments. | Built during LFGHO",
     date: "2024-01-16T00:00:00.000Z",
-    url: "dework-khaki.vercel.app/",
+    url: "https://dework-khaki.vercel.app/",
     repository: "0xAlphaDevs/DeWork",
     body: { code: "" },
     path: "string",
@@ -51,7 +51,7 @@ export const allProjects: any[] = [
     description:
       "CredX is a platform where users can own their data with Web5, can seamlessly store and share records on decentralized web nodes (DWNs) using decentralized identifiers (DIDs).CredX also allows organizations to issue secure verifiable credentials (VCs) to users and a seamless way to verify the credentials through presentation exchange.",
     date: "2023-12-24T00:00:00.000Z",
-    url: "healthx-ivory.vercel.app/",
+    url: "https://credx-beryl.vercel.app/",
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
@@ -70,7 +70,7 @@ export const allProjects: any[] = [
     description:
       "HeathX Protocol is a decntralized health record management platform built using web5.Users can own & carry their health history and seamlessly store and share medical records on decentralized web nodes (DWNs) using decentralized identifiers (DIDs). ",
     date: "2023-11-19T00:00:00.000Z",
-    url: "healthx-ivory.vercel.app/",
+    url: "https://healthx-ivory.vercel.app/",
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
@@ -93,7 +93,7 @@ export const allProjects: any[] = [
     description:
       "AI NFTs is platform that allows artists and AI algorithms to collaborate in the creation of unique NFT artworks. You can create art from text and scribbles using ControlNet AI modal and mint NFTs on NEAR Bloackchain. ",
     date: "2023-10-06T00:00:00.000Z",
-    url: "ai-nfts-sooty.vercel.app/",
+    url: "https://ai-nfts-sooty.vercel.app/",
     repository: "0xAlphaDevs/ai-nfts-mintbase",
     body: { code: "" },
     path: "string",
