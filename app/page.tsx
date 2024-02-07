@@ -1,6 +1,9 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Particles from "./components/particles";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 const navigation = [
   { name: "Projects", href: "/projects" },
@@ -9,6 +12,7 @@ const navigation = [
 ];
 
 export default function Home() {
+  const [isIntersecting, setIntersecting] = useState(true);
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
@@ -59,6 +63,35 @@ export default function Home() {
         >
           Contact
         </a> */}
+      </div>
+      <div className="flex justify-between gap-8 animate-fade-in">
+        <Link target="_blank" href="https://www.linkedin.com/in/0xyshv/">
+          <Linkedin
+            className={`w-6 h-6 duration-200 hover:font-medium ${
+              isIntersecting
+                ? " text-zinc-400 hover:text-zinc-100"
+                : "text-zinc-600 hover:text-zinc-900"
+            } `}
+          />
+        </Link>
+        <Link target="_blank" href="https://twitter.com/0xyshv">
+          <Twitter
+            className={`w-6 h-6 duration-200 hover:font-medium ${
+              isIntersecting
+                ? " text-zinc-400 hover:text-zinc-100"
+                : "text-zinc-600 hover:text-zinc-900"
+            } `}
+          />
+        </Link>
+        <Link target="_blank" href="https://github.com/0xyshv">
+          <Github
+            className={`w-6 h-6 duration-200 hover:font-medium ${
+              isIntersecting
+                ? " text-zinc-400 hover:text-zinc-100"
+                : "text-zinc-600 hover:text-zinc-900"
+            } `}
+          />
+        </Link>
       </div>
     </div>
   );
