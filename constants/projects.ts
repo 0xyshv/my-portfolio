@@ -37,7 +37,6 @@ export const allProjects: any[] = [
     path: "string",
     slug: "02",
   },
-
   {
     _id: "string",
     _raw: {},
@@ -99,7 +98,6 @@ export const allProjects: any[] = [
     path: "string",
     slug: "05",
   },
-
   {
     _id: "string",
     _raw: {},
