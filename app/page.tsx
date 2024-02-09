@@ -44,16 +44,16 @@ export default function Home() {
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
           Hi 👋, My name is Yashasvi chaudhary, I'm a front-end developer.
-          <br />
-          Building DApps in{" "}
+          <br />I have worked on web applications in{" "}
           <span className="text-white">
             {" "}
-            Web3 and DeFi space using NextJS, Typescript, Tailwind CSS and Wagmi
+            Web3, Decentalized Finance, Storage and Identity space during my
+            developemnt journey using NextJS, Typescript, Tailwind CSS and
+            numerous other tooling.
           </span>
-          <br />
-          Currently{" "}
+          <br />I also have experience with{" "}
           <span className="text-white">
-            learning prompt engineering, LLMs and playing with ChatGPT APIs.
+            configuring and integrating AI models into web apps.
           </span>
         </h2>
         <br />
