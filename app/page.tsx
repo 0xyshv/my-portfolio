@@ -41,15 +41,18 @@ export default function Home() {
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
-          Hi 👋, My name is Yashasvi chaudhary, I'm a front-end developer.
+      <div className="my-16 text-center animate-fade-in ">
+        <h2 className="text-lg text-zinc-500 ">
+          Hi 👋, My name is
+          <span className="text-white"> Yashasvi chaudhary</span>, I'm a
+          <span className="text-white"> front-end developer.</span>
           <br />I have worked on web applications in{" "}
           <span className="text-white">
             {" "}
             Web3, Decentalized Finance, Storage and Identity space during my
-            developemnt journey using NextJS, Typescript, Tailwind CSS and
-            numerous other tooling.
+            <br />
+            <span className="text-zinc-500"> developemnt journey using </span>
+            NextJS, Typescript, Tailwind CSS and numerous other tooling.
           </span>
           <br />I also have experience with{" "}
           <span className="text-white">
