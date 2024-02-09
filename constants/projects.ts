@@ -104,7 +104,7 @@ export const allProjects: any[] = [
     type: "Project",
     published: false,
     winner: true,
-    winnerTitle: "The Actual Open AI Hackathon",
+    winnerTitle: "The Actually Open AI Hackathon",
     post: "",
     title: "Alpha Marketplace",
     skills: [
