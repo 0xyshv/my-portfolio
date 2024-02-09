@@ -81,7 +81,7 @@ export const allProjects: any[] = [
     type: "Project",
     published: false,
     winner: true,
-    winnerTitle: "Encode X Mintbase 2023 Hackathon",
+    winnerTitle: "Encode X NEAR 2023 Hackathon",
     post: "https://twitter.com/encodeclub/status/1721543275301970365",
     title: "AI NFTs",
     skills: [
