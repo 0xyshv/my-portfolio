@@ -7,6 +7,25 @@ export const allProjects: any[] = [
     winner: false,
     winnerTitle: "",
     post: "",
+    title: "zkCreditScore",
+    skills: ["zk SNARK", "Noir", "Vite", "jsqr"],
+    description:
+      "zkCreditScore is a DApp which is built during the Circuit Breaker Hackathon by ETH Global where you can prove your credit worthiness using zk proofs. The prrofs are generated using the SNARK mechanism.",
+    date: "2024-02-18T00:00:00.000Z",
+    url: "zk-credit-score.vercel.app/",
+    repository: "0xAlphaDevs/zkCreditScore",
+    body: { code: "" },
+    path: "string",
+    slug: "01",
+  },
+  {
+    _id: "string",
+    _raw: {},
+    type: "Project",
+    published: false,
+    winner: false,
+    winnerTitle: "",
+    post: "",
     title: "SovID",
     skills: ["EVM", "ERC 721", "Wagmi", "Material Tailwind"],
     description:
@@ -16,7 +35,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/SovID",
     body: { code: "" },
     path: "string",
-    slug: "01",
+    slug: "02",
   },
   {
     _id: "string",
@@ -35,7 +54,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/DeWork",
     body: { code: "" },
     path: "string",
-    slug: "02",
+    slug: "03",
   },
   {
     _id: "string",
@@ -54,7 +73,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "03",
+    slug: "04",
   },
   {
     _id: "string",
@@ -73,7 +92,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "04",
+    slug: "05",
   },
   {
     _id: "string",
@@ -96,7 +115,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/ai-nfts-mintbase",
     body: { code: "" },
     path: "string",
-    slug: "05",
+    slug: "06",
   },
   {
     _id: "string",
@@ -120,12 +139,18 @@ export const allProjects: any[] = [
     repository: "0xyshv/image-marketplace.git",
     body: { code: "" },
     path: "string",
-    slug: "06",
+    slug: "07",
   },
 ];
 
 export const carouselImages: Record<string, string[]> = {
   "01": [
+    "/zkCreditScore/qr_verification.jpeg",
+    "/zkCreditScore/view_credit_report.jpeg",
+    "/zkCreditScore/zk_snark_proof.jpeg",
+    "/zkCreditScore/finance_dashboard.jpeg",
+  ],
+  "02": [
     "/sovid/ad1.jpeg",
     "/sovid/ad2.jpeg",
     "/sovid/ad3.jpeg",
@@ -134,21 +159,13 @@ export const carouselImages: Record<string, string[]> = {
     "/sovid/ad6.jpeg",
     "/sovid/ad7.jpeg",
   ],
-  "02": [
+  "03": [
     "/dework/1.png",
     "/dework/2.png",
     "/dework/3.png",
     "/dework/4.png",
     "/dework/5.png",
     "/dework/6.png",
-  ],
-  "03": [
-    "/healthX/1.png",
-    "/healthX/2.png",
-    "/healthX/3.png",
-    "/healthX/4.png",
-    "/healthX/5.png",
-    "/healthX/6.png",
   ],
   "04": [
     "/healthX/1.png",
@@ -159,6 +176,14 @@ export const carouselImages: Record<string, string[]> = {
     "/healthX/6.png",
   ],
   "05": [
+    "/healthX/1.png",
+    "/healthX/2.png",
+    "/healthX/3.png",
+    "/healthX/4.png",
+    "/healthX/5.png",
+    "/healthX/6.png",
+  ],
+  "06": [
     "/ainfts/1.png",
     "/ainfts/2.png",
     "/ainfts/3.png",
@@ -170,7 +195,7 @@ export const carouselImages: Record<string, string[]> = {
     "/ainfts/9.png",
     "/ainfts/10.png",
   ],
-  "06": [
+  "07": [
     "/alpha-marketplace/1.png",
     "/alpha-marketplace/2.png",
     "/alpha-marketplace/3.png",

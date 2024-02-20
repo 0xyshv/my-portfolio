@@ -32,7 +32,7 @@ export default async function ProjectsPage() {
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 lg:grid-cols-1 w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-          {[top1, top2, top3, top4, top5, top6].map((project) => (
+          {[top1, top2, top3, top4, top5, top6, top7].map((project) => (
             <Card key={project.slug}>
               <Article project={project} views={views[project.slug] ?? 0} />
             </Card>
