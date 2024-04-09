@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s | Home",
   },
   description:
-    "Meta certified Frontend Developer | Typescript, NextJS, Tailwind CSS and UI/UX",
+    "Frontend Developer | Typescript, NextJS, Tailwind CSS and UI/UX",
   openGraph: {
     title: "Yashasvi Chaudhary",
     description: "Meta certified Front-end Developer",
@@ -65,9 +65,8 @@ export default function RootLayout({
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>{/* <Analytics /> */}</head>
       <body
-        className={`bg-black ${
-          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-        }`}
+        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+          }`}
       >
         {children}
       </body>

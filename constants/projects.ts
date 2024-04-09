@@ -12,11 +12,11 @@ export const allProjects: any[] = [
     description:
       "zkCreditScore is a DApp which is built during the Circuit Breaker Hackathon by ETH Global where you can prove your credit worthiness using zk proofs. The prrofs are generated using the SNARK mechanism.",
     date: "2024-02-18T00:00:00.000Z",
-    url: "zk-credit-score.vercel.app/",
+    url: "https://zk-credit-score.vercel.app/",
     repository: "0xAlphaDevs/zkCreditScore",
     body: { code: "" },
     path: "string",
-    slug: "01",
+    slug: "02",
   },
   {
     _id: "string",
@@ -35,7 +35,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/SovID",
     body: { code: "" },
     path: "string",
-    slug: "02",
+    slug: "03",
   },
   {
     _id: "string",
@@ -54,7 +54,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/DeWork",
     body: { code: "" },
     path: "string",
-    slug: "03",
+    slug: "04",
   },
   {
     _id: "string",
@@ -73,7 +73,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "04",
+    slug: "01",
   },
   {
     _id: "string",
@@ -168,12 +168,15 @@ export const carouselImages: Record<string, string[]> = {
     "/dework/6.png",
   ],
   "04": [
-    "/healthX/1.png",
-    "/healthX/2.png",
-    "/healthX/3.png",
-    "/healthX/4.png",
-    "/healthX/5.png",
-    "/healthX/6.png",
+    "/credX/1.png",
+    "/credX/2.png",
+    "/credX/3.png",
+    "/credX/4.png",
+    "/credX/5.png",
+    "/credX/6.png",
+    "/credX/7.png",
+    "/credX/8.png",
+    "/credX/9.png",
   ],
   "05": [
     "/healthX/1.png",
