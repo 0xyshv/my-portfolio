@@ -144,13 +144,13 @@ export const allProjects: any[] = [
 ];
 
 export const carouselImages: Record<string, string[]> = {
-  "01": [
+  "02": [
     "/zkCreditScore/qr_verification.jpeg",
     "/zkCreditScore/view_credit_report.jpeg",
     "/zkCreditScore/zk_snark_proof.jpeg",
     "/zkCreditScore/finance_dashboard.jpeg",
   ],
-  "02": [
+  "03": [
     "/sovid/ad1.jpeg",
     "/sovid/ad2.jpeg",
     "/sovid/ad3.jpeg",
@@ -159,7 +159,7 @@ export const carouselImages: Record<string, string[]> = {
     "/sovid/ad6.jpeg",
     "/sovid/ad7.jpeg",
   ],
-  "03": [
+  "04": [
     "/dework/1.png",
     "/dework/2.png",
     "/dework/3.png",
@@ -167,7 +167,7 @@ export const carouselImages: Record<string, string[]> = {
     "/dework/5.png",
     "/dework/6.png",
   ],
-  "04": [
+  "01": [
     "/credX/1.png",
     "/credX/2.png",
     "/credX/3.png",
