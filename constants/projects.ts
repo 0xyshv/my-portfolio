@@ -4,6 +4,44 @@ export const allProjects: any[] = [
     _raw: {},
     type: "Project",
     winner: true,
+    winnerTitle: "Agents Gizathon | Encode Club",
+    post: "",
+    published: false,
+    title: "Straknet ETH Trading Agent",
+    skills: ["Giza", "Starknet", "PyTorch"],
+    description:
+      "Starknet ETH Trading Agent is an AI agent designed to facilitate trading on the ETH/USDC pool using an AI-driven strategy. The goal is to optimize trades based on market conditions, leveraging machine learning models for prediction and decision-making.",
+    date: "2024-06-10T00:00:00.000Z",
+    url: "https://www.youtube.com/watch?v=k4jITLvaq-Q",
+    repository: "0xAlphaDevs/starknet-eth-trading-agent",
+    body: { code: "" },
+    path: "string",
+    slug: "01",
+  },
+  {
+    _id: "string",
+    _raw: {},
+    type: "Project",
+    winner: true,
+    winnerTitle: "Scaling Web3 Hackathon | Encode Club",
+    post: "",
+    published: false,
+    title: "Ethergigs",
+    skills: ["EtherLink Testnet", "Wagmi core", "Next.js"],
+    description:
+      "EtherGig a decentralized freelancing platform connecting businesses and professionals",
+    date: "2024-04-24T00:00:00.000Z",
+    url: "https://credx-beryl.vercel.app/",
+    repository: "0xAlphaDevs/HealthX-DIF-hackathon",
+    body: { code: "" },
+    path: "string",
+    slug: "02",
+  },
+  {
+    _id: "string",
+    _raw: {},
+    type: "Project",
+    winner: true,
     winnerTitle: "Featured",
     post: "",
     published: false,
@@ -16,15 +54,15 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "01",
+    slug: "03",
   },
   {
     _id: "string",
     _raw: {},
     type: "Project",
     published: false,
-    winner: false,
-    winnerTitle: "",
+    winner: true,
+    winnerTitle: "Scaling Ethereum | ETH Global",
     post: "",
     title: "Supply-Trace",
     skills: ["Sign Protocol", "Arbitrum"],
@@ -35,7 +73,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/Supply-Trace",
     body: { code: "" },
     path: "string",
-    slug: "02",
+    slug: "04",
   },
   {
     _id: "string",
@@ -54,7 +92,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/zkCreditScore",
     body: { code: "" },
     path: "string",
-    slug: "03",
+    slug: "05",
   },
   {
     _id: "string",
@@ -73,26 +111,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/SovID",
     body: { code: "" },
     path: "string",
-    slug: "04",
-  },
-  {
-    _id: "string",
-    _raw: {},
-    type: "Project",
-    published: false,
-    winner: true,
-    winnerTitle: "LFGHO | ETH Gobal",
-    post: "https://ethglobal.com/showcase/dework-cqc5h",
-    title: "DeWork",
-    skills: ["DeFi | Stablecoin", "Radix UI", "Next.js 14", "Wagmi"],
-    description:
-      "DeWork is a decentralized freelancing platform connecting businesses and professionals leveraging the GHO stable coin for payments. | Built during LFGHO",
-    date: "2024-01-16T00:00:00.000Z",
-    url: "https://dework-khaki.vercel.app/",
-    repository: "0xAlphaDevs/DeWork",
-    body: { code: "" },
-    path: "string",
-    slug: "05",
+    slug: "06",
   },
   {
     _id: "string",
@@ -111,7 +130,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "06",
+    slug: "07",
   },
   {
     _id: "string",
@@ -134,7 +153,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/ai-nfts-mintbase",
     body: { code: "" },
     path: "string",
-    slug: "07",
+    slug: "08",
   },
   {
     _id: "string",
@@ -158,12 +177,29 @@ export const allProjects: any[] = [
     repository: "0xyshv/image-marketplace.git",
     body: { code: "" },
     path: "string",
-    slug: "08",
+    slug: "09",
   },
 ];
 
 export const carouselImages: Record<string, string[]> = {
   "01": [
+    "/starknet-eth-trading-agent/1.jpg",
+    "/starknet-eth-trading-agent/2.jpeg",
+    "/starknet-eth-trading-agent/3.jpeg",
+    "/starknet-eth-trading-agent/4.jpeg",
+    "/starknet-eth-trading-agent/5.jpeg",
+  ],
+  "02": [
+    "/ether-gig/1.png",
+    "/ether-gig/2.jpg",
+    "/ether-gig/3.jpg",
+    "/ether-gig/4.jpg",
+    "/ether-gig/5.jpg",
+    "/ether-gig/6.jpg",
+    "/ether-gig/7.jpg",
+    "/ether-gig/8.jpg",
+  ],
+  "03": [
     "/credX/1.png",
     "/credX/2.png",
     "/credX/3.png",
@@ -174,20 +210,20 @@ export const carouselImages: Record<string, string[]> = {
     "/credX/8.png",
     "/credX/9.png",
   ],
-  "02": [
+  "04": [
     "/supply-trace/system-architecture.png",
     "/supply-trace/1.jpg",
     "/supply-trace/2.jpg",
     "/supply-trace/3.jpg",
     "/supply-trace/4.jpg",
   ],
-  "03": [
+  "05": [
     "/zkCreditScore/qr_verification.jpeg",
     "/zkCreditScore/view_credit_report.jpeg",
     "/zkCreditScore/zk_snark_proof.jpeg",
     "/zkCreditScore/finance_dashboard.jpeg",
   ],
-  "04": [
+  "06": [
     "/sovid/ad1.jpeg",
     "/sovid/ad2.jpeg",
     "/sovid/ad3.jpeg",
@@ -196,16 +232,7 @@ export const carouselImages: Record<string, string[]> = {
     "/sovid/ad6.jpeg",
     "/sovid/ad7.jpeg",
   ],
-  "05": [
-    "/dework/1.png",
-    "/dework/2.png",
-    "/dework/3.png",
-    "/dework/4.png",
-    "/dework/5.png",
-    "/dework/6.png",
-  ],
-
-  "06": [
+  "07": [
     "/healthX/1.png",
     "/healthX/2.png",
     "/healthX/3.png",
@@ -213,7 +240,7 @@ export const carouselImages: Record<string, string[]> = {
     "/healthX/5.png",
     "/healthX/6.png",
   ],
-  "07": [
+  "08": [
     "/ainfts/1.png",
     "/ainfts/2.png",
     "/ainfts/3.png",
@@ -225,7 +252,7 @@ export const carouselImages: Record<string, string[]> = {
     "/ainfts/9.png",
     "/ainfts/10.png",
   ],
-  "08": [
+  "09": [
     "/alpha-marketplace/1.png",
     "/alpha-marketplace/2.png",
     "/alpha-marketplace/3.png",
