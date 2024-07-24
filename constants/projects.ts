@@ -3,14 +3,14 @@ export const allProjects: any[] = [
     _id: "string",
     _raw: {},
     type: "Project",
-    winner: false,
+    winner: true,
     winnerTitle: "Web3_AI Hackathon | Encode Club",
     post: "",
     published: false,
-    title: "Straknet Txn Simulator",
+    title: "Starknet Txn Simulator",
     skills: ["Galadriel L1 Devnet", "Starknet.js", "Starknet/@react-core"],
     description:
-      "Straknet Txn Simulator is a AI-Enhanced Transaction Simulator with User-Friendly Insights on Starknet | Built using Galadriel",
+      "Starknet Txn Simulator is a AI-Enhanced Transaction Simulator with User-Friendly Insights on Starknet | Built using Galadriel",
     date: "2024-06-30T00:00:00.000Z",
     url: "https://starknet-txn-simulator.vercel.app/",
     repository: "0xAlphaDevs/starknet-eth-trading-agent",
@@ -26,7 +26,7 @@ export const allProjects: any[] = [
     winnerTitle: "Agents Gizathon | Encode Club",
     post: "",
     published: false,
-    title: "Straknet ETH Trading Agent",
+    title: "Starknet ETH Trading Agent",
     skills: ["Giza", "Starknet", "PyTorch"],
     description:
       "Starknet ETH Trading Agent is an AI agent designed to facilitate trading on the ETH/USDC pool using an AI-driven strategy. The goal is to optimize trades based on market conditions, leveraging machine learning models for prediction and decision-making.",
@@ -73,7 +73,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "04",
+    slug: "05",
   },
   {
     _id: "string",
@@ -92,7 +92,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/Supply-Trace",
     body: { code: "" },
     path: "string",
-    slug: "05",
+    slug: "04",
   },
   {
     _id: "string",
@@ -228,7 +228,7 @@ export const carouselImages: Record<string, string[]> = {
     "/ether-gig/7.jpg",
     "/ether-gig/8.jpg",
   ],
-  "04": [
+  "05": [
     "/credX/1.png",
     "/credX/2.png",
     "/credX/3.png",
@@ -239,7 +239,7 @@ export const carouselImages: Record<string, string[]> = {
     "/credX/8.png",
     "/credX/9.png",
   ],
-  "05": [
+  "04": [
     "/supply-trace/system-architecture.png",
     "/supply-trace/1.jpg",
     "/supply-trace/2.jpg",
