@@ -3,6 +3,44 @@ export const allProjects: any[] = [
     _id: "string",
     _raw: {},
     type: "Project",
+    winner: false,
+    winnerTitle: "ETH Online 2024",
+    post: "",
+    published: false,
+    title: "OmniAccounts",
+    skills: ["LayerZero", "Tokenbound SDK", "ERC-6551"],
+    description:
+      "OmniAccounts are Omnichain ERC-6551 token bound accounts | Powered by LayerZero. With OmniAccounts, you can create, connect and manage your NFT wallets seamlessly.",
+    date: "2024-08-30T00:00:00.000Z",
+    url: "https://omni-accounts.vercel.app/",
+    repository: "mr-harshtyagi/OmniAccounts",
+    body: { code: "" },
+    path: "string",
+    slug: "01",
+  },
+  {
+    _id: "string",
+    _raw: {},
+    type: "Project",
+    winner: true,
+    winnerTitle: "Theta 2024 Hackathon ",
+    post: "",
+    published: false,
+    title: "Photon",
+    skills: ["Theta EdgeCloud", "Theta Video API", "Theta Testnet"],
+    description:
+      "Photon is a decentralized platform that provides NFT based DRM protected courses for online learning. It shows content through decentralised video powered by Theta EdgeCloud. ",
+    date: "2024-07-30T00:00:00.000Z",
+    url: "https://photon-theta-seven.vercel.app/",
+    repository: "0xAlphaDevs/Photon",
+    body: { code: "" },
+    path: "string",
+    slug: "02",
+  },
+  {
+    _id: "string",
+    _raw: {},
+    type: "Project",
     winner: true,
     winnerTitle: "Web3_AI Hackathon | Encode Club",
     post: "",
@@ -16,7 +54,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/starknet-eth-trading-agent",
     body: { code: "" },
     path: "string",
-    slug: "01",
+    slug: "03",
   },
   {
     _id: "string",
@@ -35,7 +73,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/starknet-eth-trading-agent",
     body: { code: "" },
     path: "string",
-    slug: "02",
+    slug: "04",
   },
   {
     _id: "string",
@@ -54,7 +92,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "03",
+    slug: "05",
   },
   {
     _id: "string",
@@ -73,7 +111,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "05",
+    slug: "06",
   },
   {
     _id: "string",
@@ -92,7 +130,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/Supply-Trace",
     body: { code: "" },
     path: "string",
-    slug: "04",
+    slug: "07",
   },
   {
     _id: "string",
@@ -111,7 +149,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/zkCreditScore",
     body: { code: "" },
     path: "string",
-    slug: "06",
+    slug: "08",
   },
   {
     _id: "string",
@@ -130,7 +168,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/SovID",
     body: { code: "" },
     path: "string",
-    slug: "07",
+    slug: "09",
   },
   {
     _id: "string",
@@ -149,7 +187,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/HealthX-DIF-hackathon",
     body: { code: "" },
     path: "string",
-    slug: "08",
+    slug: "10",
   },
   {
     _id: "string",
@@ -172,7 +210,7 @@ export const allProjects: any[] = [
     repository: "0xAlphaDevs/ai-nfts-mintbase",
     body: { code: "" },
     path: "string",
-    slug: "09",
+    slug: "11",
   },
   {
     _id: "string",
@@ -196,12 +234,39 @@ export const allProjects: any[] = [
     repository: "0xyshv/image-marketplace.git",
     body: { code: "" },
     path: "string",
-    slug: "10",
+    slug: "12",
   },
 ];
 
 export const carouselImages: Record<string, string[]> = {
   "01": [
+    "/omniaccounts/1.png",
+    "/omniaccounts/0.png",
+    "/omniaccounts/2.png",
+    "/omniaccounts/3.png",
+    "/omniaccounts/4.png",
+    "/omniaccounts/5.png",
+    "/omniaccounts/6.png",
+    "/omniaccounts/7.png",
+    "/omniaccounts/8.png",
+    "/omniaccounts/9.png",
+    "/omniaccounts/10.png",
+  ],
+  "02": [
+    "/photon/1.png",
+    "/photon/2.jpeg",
+    "/photon/0.jpeg",
+    "/photon/3.jpeg",
+    "/photon/4.jpeg",
+    "/photon/11.jpeg",
+    "/photon/10.jpeg",
+    "/photon/5.jpeg",
+    "/photon/6.jpeg",
+    "/photon/7.jpeg",
+    "/photon/8.jpeg",
+    "/photon/9.jpeg",
+  ],
+  "03": [
     "/starknet-txnp-simulator/1.jpeg",
     "/starknet-txnp-simulator/2.jpeg",
     "/starknet-txnp-simulator/3.jpeg",
@@ -211,14 +276,14 @@ export const carouselImages: Record<string, string[]> = {
     "/starknet-txnp-simulator/7.jpeg",
     "/starknet-txnp-simulator/8.jpeg",
   ],
-  "02": [
+  "04": [
     "/starknet-eth-trading-agent/1.jpg",
     "/starknet-eth-trading-agent/2.jpeg",
     "/starknet-eth-trading-agent/3.jpeg",
     "/starknet-eth-trading-agent/4.jpeg",
     "/starknet-eth-trading-agent/5.jpeg",
   ],
-  "03": [
+  "05": [
     "/ether-gig/1.png",
     "/ether-gig/2.jpg",
     "/ether-gig/3.jpg",
@@ -228,7 +293,7 @@ export const carouselImages: Record<string, string[]> = {
     "/ether-gig/7.jpg",
     "/ether-gig/8.jpg",
   ],
-  "05": [
+  "06": [
     "/credX/1.png",
     "/credX/2.png",
     "/credX/3.png",
@@ -239,20 +304,20 @@ export const carouselImages: Record<string, string[]> = {
     "/credX/8.png",
     "/credX/9.png",
   ],
-  "04": [
+  "07": [
     "/supply-trace/system-architecture.png",
     "/supply-trace/1.jpg",
     "/supply-trace/2.jpg",
     "/supply-trace/3.jpg",
     "/supply-trace/4.jpg",
   ],
-  "06": [
+  "08": [
     "/zkCreditScore/qr_verification.jpeg",
     "/zkCreditScore/view_credit_report.jpeg",
     "/zkCreditScore/zk_snark_proof.jpeg",
     "/zkCreditScore/finance_dashboard.jpeg",
   ],
-  "07": [
+  "09": [
     "/sovid/ad1.jpeg",
     "/sovid/ad2.jpeg",
     "/sovid/ad3.jpeg",
@@ -261,7 +326,7 @@ export const carouselImages: Record<string, string[]> = {
     "/sovid/ad6.jpeg",
     "/sovid/ad7.jpeg",
   ],
-  "08": [
+  "10": [
     "/healthX/1.png",
     "/healthX/2.png",
     "/healthX/3.png",
@@ -269,7 +334,7 @@ export const carouselImages: Record<string, string[]> = {
     "/healthX/5.png",
     "/healthX/6.png",
   ],
-  "09": [
+  "11": [
     "/ainfts/1.png",
     "/ainfts/2.png",
     "/ainfts/3.png",
@@ -281,7 +346,7 @@ export const carouselImages: Record<string, string[]> = {
     "/ainfts/9.png",
     "/ainfts/10.png",
   ],
-  "10": [
+  "12": [
     "/alpha-marketplace/1.png",
     "/alpha-marketplace/2.png",
     "/alpha-marketplace/3.png",
