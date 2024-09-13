@@ -37,7 +37,7 @@ export default function Home() {
         Yashasvi Chaudhary
       </h1>
       <h1 className="z-10 mt-4 text-md text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-2xl md:text-4xl whitespace-nowrap bg-clip-text ">
-        Frontend Developer (Web3 & Blockchain)
+        Web3 Frontend Developer
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -45,19 +45,19 @@ export default function Home() {
         <h2 className="text-lg text-zinc-500 ">
           Hi 👋, My name is
           <span className="text-white"> Yashasvi chaudhary</span>, I'm a
-          <span className="text-white"> front-end developer.</span>
-          <br />I have worked on web applications in{" "}
+          <span className="text-white"> web3 front-end developer.</span>
+          <br />I have experience working with
           <span className="text-white">
             {" "}
-            Web3, Decentalized Finance, Storage and Identity space during my
+            Decentralized Finance, Storage, AI models and Identity infrastructure (DIDs, DWNs, and VCs) during my
             <br />
             <span className="text-zinc-500"> developemnt journey using </span>
             NextJS, Typescript, Tailwind CSS and numerous other tooling.
           </span>
-          <br />I also have experience with{" "}
+          {/* <br />I also have experience with{" "}
           <span className="text-white">
             configuring and integrating AI models into web apps.
-          </span>
+          </span> */}
         </h2>
         <br />
         {/* <a
@@ -70,31 +70,36 @@ export default function Home() {
       <div className="flex justify-between gap-8 animate-fade-in">
         <Link target="_blank" href="https://www.linkedin.com/in/0xyshv/">
           <Linkedin
-            className={`w-6 h-6 duration-200 hover:font-medium ${
-              isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
-                : "text-zinc-600 hover:text-zinc-900"
-            } `}
+            className={`w-6 h-6 duration-200 hover:font-medium ${isIntersecting
+              ? " text-zinc-400 hover:text-zinc-100"
+              : "text-zinc-600 hover:text-zinc-900"
+              } `}
           />
         </Link>
         <Link target="_blank" href="https://twitter.com/0xyshv">
           <Twitter
-            className={`w-6 h-6 duration-200 hover:font-medium ${
-              isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
-                : "text-zinc-600 hover:text-zinc-900"
-            } `}
+            className={`w-6 h-6 duration-200 hover:font-medium ${isIntersecting
+              ? " text-zinc-400 hover:text-zinc-100"
+              : "text-zinc-600 hover:text-zinc-900"
+              } `}
           />
         </Link>
         <Link target="_blank" href="https://github.com/0xyshv">
           <Github
-            className={`w-6 h-6 duration-200 hover:font-medium ${
-              isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
-                : "text-zinc-600 hover:text-zinc-900"
-            } `}
+            className={`w-6 h-6 duration-200 hover:font-medium ${isIntersecting
+              ? " text-zinc-400 hover:text-zinc-100"
+              : "text-zinc-600 hover:text-zinc-900"
+              } `}
           />
         </Link>
+        {/* <Link target="_blank" href="https://warpcast.com/0xyshv">
+          <Warpcast
+            className={`w-6 h-6 duration-200 hover:font-medium ${isIntersecting
+              ? " text-zinc-400 hover:text-zinc-100"
+              : "text-zinc-600 hover:text-zinc-900"
+              } `}
+          />
+        </Link> */}
       </div>
     </div>
   );
